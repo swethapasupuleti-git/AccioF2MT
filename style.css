@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+#nav-btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px; 
+}
+#cookpal-img{
+    margin-left: 30px;
+    padding: 20px;
+
+}
+#user{
+    padding: 25px;
+}
+/* hero-section */
+#hero-section{
+    position: relative;
+    text-align: center;
+    margin-top: 10px;  
+}
+#hero-section > img{
+    max-width: 100%;
+}
+#text{
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 150px;
+}
+/* search */
+
+#search-bar input {
+    width: 100%; 
+}
+#search-bar{
+    padding: 30px;
+    width: 80vw;
+}
+#search-bar>h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#search-sec{
+    display: flex;
+}
+#search-icon{
+    background-color: lawngreen;
+    padding: 10px;
+}
+/* categories */
+#categories{
+    padding-inline: 30px;
+}
+#categories > button{
+    border-radius: 5px;
+    padding: 20px !important;
+    width: 200px;
+}
+#all-recipe{
+    background-color: rgb(226, 226, 24) !important;
+}
+#veg{
+    background-color: rgb(4, 166, 4) !important;
+}
+#non-veg{
+    background-color: rgb(237, 71, 25) !important;
+}
+/* menu */
+#food-items{
+    margin-top: 20px;
+    display: flex;
+}
+#ratings{
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+}
+#ratings> h2, #ratings>h4, #ratings>input{
+    padding: 10px;
+}
+#menu{
+    flex: 5;
+}
+
+.recipe-card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 250px;
+}
+.recipe-card img {
+    max-width: 100%;
+    object-fit: contain;
+    
+}
+/* footer */
+#footer{
+    padding: 30px;
+}
+#about{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+
+td, th{
+   padding: 10px;
+   padding-inline: 30px;
+} 
+
+#col-3>p, #col-3>div{
+    margin-top: 20px;
+}
+input{
+    padding: 8px;
+}
+#Subscribe{
+    background-color: rgb(84, 228, 84) !important;
+    padding: 10px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.social-btn{
+    width:40px;
+    height: 40px;
+    background-color: rgb(16, 16, 59);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-inline: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+    #hero-section{
+        width: 80%vw;
+    }
+    #search-bar {
+        text-align: center;
+    }
+
+    #categories {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #food-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ratings {
+        margin-top: 10;
+        border: 1px solid black;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+        
+}
+    #col-2, #col-3, #text, .social{
+        display: none;
+    }
+    .recipe-card{
+        width: 100px;
+    }
+    
+}
+
